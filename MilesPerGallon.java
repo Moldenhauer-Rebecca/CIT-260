@@ -15,34 +15,23 @@ public class MilesPerGallon {
         System.out.println("This program tells you your average miles per gallon for this driving period");
         
         //create an input file for the console
-        Scanner inFile;
-        inFile = new Scanner(System.in);
+        Scanner inFile = new Scanner(System.in);
         
         //prompt to enter the number of miles traveled. 
-        System.out.println("\nPlease enter number of miles driven?:");
-        int miles;
-        //read the value of the next line typed in the console
-        miles = inFile.nextInt();
+        System.out.println("Please enter number of miles driven?:");
+        double miles = inFile.nextDouble();
+        
         
         //prompt to enter the number of gallons of gas used 
-        System.out.println("\nEnter the number of gallons used:");
-        int gallons;
-        //get the value entered for the number of gallons
-        gallons = inFile.nextInt();
+        System.out.println("Enter the number of gallons used:");
+        double gallons = inFile.nextDouble();
         
         //calculate miles per gallon
-        int mpg;
-        mpg = miles / gallons;
+        double mpg = miles / gallons;
         
-        //display the miles per gallon to the concole
-        System.out.println("\n******************************************"
-                           + "*************************");
-        
-        System.out.println(" The Miles-Per-Gallon used in this trip are "
+        //display the miles per gallon to the concole 
+        System.out.println("The Miles-Per-Gallon for this trip is "
                             +  mpg );
-        
-        System.out.println("*********************************************"
-                          + "*************************\n");
         
     }
 }
